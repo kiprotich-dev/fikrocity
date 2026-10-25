@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="76" y1="60" x2="568" y2="584" gradientUnits="userSpaceOnUse"><stop stop-color="#111C35"/><stop offset="1" stop-color="#080D1A"/></linearGradient>
+    <linearGradient id="top" x1="208" y1="150" x2="420" y2="355" gradientUnits="userSpaceOnUse"><stop stop-color="#74F3DE"/><stop offset=".48" stop-color="#25D5C2"/><stop offset="1" stop-color="#5578FF"/></linearGradient>
+    <linearGradient id="side" x1="408" y1="204" x2="455" y2="467" gradientUnits="userSpaceOnUse"><stop stop-color="#3CA9C4"/><stop offset="1" stop-color="#293DA3"/></linearGradient>
+    <linearGradient id="front" x1="193" y1="250" x2="420" y2="412" gradientUnits="userSpaceOnUse"><stop stop-color="#E7FFFC"/><stop offset=".24" stop-color="#48E1CF"/><stop offset="1" stop-color="#6B82FF"/></linearGradient>
+    <filter id="shadow" x="95" y="104" width="474" height="490" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="25"/></filter>
+    <filter id="soft" x="0" y="0" width="640" height="640" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="42"/></filter>
+    <filter id="float" x="110" y="106" width="420" height="420" filterUnits="userSpaceOnUse"><feDropShadow dx="0" dy="24" stdDeviation="19" flood-color="#01050D" flood-opacity=".65"/></filter>
+  </defs>
+  <rect width="640" height="640" rx="144" fill="url(#bg)"/>
+  <circle cx="320" cy="290" r="155" fill="#18CDBD" opacity=".16" filter="url(#soft)"/>
+  <ellipse cx="324" cy="491" rx="143" ry="27" fill="#050916" opacity=".72" filter="url(#shadow)"/>
+  <g filter="url(#float)">
+    <!-- lifted top stroke -->
+    <path d="M214 153C214 143 222 135 232 135H414C424 135 430 146 424 155L394 202C391 207 386 210 380 210H202L214 153Z" fill="url(#top)"/>
+    <path d="M232 135H414C424 135 430 146 424 155L417 166C422 156 415 148 405 148H226L232 135Z" fill="white" opacity=".30"/>
+    <!-- middle stroke, offset to imply forward movement -->
+    <path d="M183 246C186 237 194 231 204 231H369C380 231 386 242 380 251L352 295C349 300 344 303 338 303H169L183 246Z" fill="url(#front)"/>
+    <path d="M204 231H369C380 231 386 242 380 251L373 262C378 252 371 244 361 244H177L183 246C186 237 194 231 204 231Z" fill="white" opacity=".27"/>
+    <!-- lower stroke -->
+    <path d="M153 341C156 332 164 326 174 326H323C334 326 340 337 334 346L306 390C303 395 298 398 292 398H139L153 341Z" fill="url(#top)"/>
+    <path d="M174 326H323C334 326 340 337 334 346L327 357C332 347 325 339 315 339H147L153 341C156 332 164 326 174 326Z" fill="white" opacity=".24"/>
+    <!-- floating pixel spark -->
+    <path d="M453 183L460 202L479 209L460 216L453 235L446 216L427 209L446 202L453 183Z" fill="#E8FFFC"/>
+    <circle cx="475" cy="285" r="6" fill="#75E9DC"/>
+    <circle cx="164" cy="190" r="5" fill="#75E9DC" opacity=".85"/>
+  </g>
+  <text x="320" y="566" text-anchor="middle" fill="#E9F3FF" font-family="Inter, Avenir, Arial, sans-serif" font-size="30" font-weight="650" letter-spacing="3">FIKROCITY</text>
+</svg>
